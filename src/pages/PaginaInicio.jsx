@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function PaginaInicio() {
   return (
     <>
@@ -50,9 +52,9 @@ function PaginaInicio() {
             Email: info@centroodontologico.com
           </p>
           <div className="text-center mt-3">
-            <a href="/consulta" className="btn btn-primary">
+            <Link to="/consulta" className="btn btn-primary">
               Consulta tu imagen
-            </a>
+            </Link>
           </div>
         </div>
       </section>

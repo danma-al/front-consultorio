@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom'
+
 
 function RegistroMedico() {
   const [nombre, setNombre] = useState('')
@@ -82,9 +84,9 @@ function RegistroMedico() {
 
       <p className="mt-3 text-center">
         ¿Ya tienes una cuenta?{' '}
-        <a href="/medico-login" style={{ color: '#007bff' }}>
+        <Link to="/medico-login" style={{ color: '#007bff' }}>
           Inicia sesión
-        </a>
+        </Link>
       </p>
     </div>
   )
